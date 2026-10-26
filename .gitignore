@@ -1,0 +1,18 @@
+# Local environment and notebook caches
+.venv/
+.mplconfig/
+.jupyter/
+.jupyter_data/
+.jupyter_runtime/
+.ipython/
+.ipynb_checkpoints/
+__pycache__/
+*.pyc
+.DS_Store
+
+# Local test copies of the notebooks
+_run/
+
+# Rebuilt by 01_data_joining.ipynb.
+# station_hour.parquet is about 116MB, above GitHub's 100MB file limit.
+data/

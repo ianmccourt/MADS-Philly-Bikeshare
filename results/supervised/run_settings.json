@@ -1,0 +1,29 @@
+{
+  "packages": {
+    "numpy": "2.5.4",
+    "pandas": "3.1.0",
+    "pyarrow": "26.0.0",
+    "scikit-learn": "1.9.1",
+    "xgboost": "3.4.1",
+    "matplotlib": "3.11.2"
+  },
+  "max_train_rows": 50000,
+  "max_fold_score_rows": 20000,
+  "shared_manifest_hash": "a103fb8f2bedc8e29a34f84d10df941329f4b9d984ae56e62b0632a647c0c86c",
+  "station_clusters_manifest_hash": "d4ed5e6c46de585a29ecbdf7e6731a72680adcdcd0fee7d7465e549958cb4793",
+  "station_groups_from_04": [
+    "Daytime commute",
+    "Short-hop core",
+    "Longer-trip neighbourhood",
+    "Leisure & parks"
+  ],
+  "xgb_missing_method": "native",
+  "selected_family": "XGBoost",
+  "median_search_winner": "XGBoost",
+  "selected_feature_set": "Main + recent behavior",
+  "window_hours": 4,
+  "behavior_window": "28 days ending in the last observed hour",
+  "model_search": "all_window_tuning.csv",
+  "behavior_comparison": "behavior_cv_folds.csv",
+  "test_summary": "test_family_summary.csv"
+}

@@ -1,0 +1,46 @@
+{
+  "version": 1,
+  "source": "04_unsupervised_model_training",
+  "settings": {
+    "study_start": "2024-01-01",
+    "train_end": "2026-01-01",
+    "validation_end": "2026-04-01",
+    "test_end": "2026-07-01",
+    "timezone": "America/New_York",
+    "forecast_profiles_available_from": "2024-10-01",
+    "forward_validation_windows": [
+      [
+        "2025-01-01",
+        "2025-04-01"
+      ],
+      [
+        "2025-04-01",
+        "2025-07-01"
+      ],
+      [
+        "2025-07-01",
+        "2025-10-01"
+      ],
+      [
+        "2025-10-01",
+        "2026-01-01"
+      ],
+      [
+        "2026-01-01",
+        "2026-04-01"
+      ]
+    ]
+  },
+  "training_end_exclusive": "2026-01-01 00:00:00",
+  "shared_manifest_hash": "a103fb8f2bedc8e29a34f84d10df941329f4b9d984ae56e62b0632a647c0c86c",
+  "files": {
+    "station_clusters.parquet": "c86c7875058b03f5ec0bb4fdff727ba1b6d43c9f1e041d95f3ed029838adacce"
+  },
+  "n_stations": 229,
+  "cluster_names": [
+    "Daytime commute",
+    "Short-hop core",
+    "Longer-trip neighbourhood",
+    "Leisure & parks"
+  ]
+}
