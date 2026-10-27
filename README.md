@@ -9,11 +9,12 @@ Trip files come from [Indego](https://www.rideindego.com/about/data/). Weather, 
 Run these from this folder, in order:
 
 1. `01_data_joining.ipynb` builds `data/processed/` from the Indego and DisPatch70 downloads.
-2. `03_eda.ipynb` checks the joined station-hour panel and writes `figures/eda/`.
-3. `04_unsupervised_model_training.ipynb` clusters trips and stations.
-4. `05_supervised_model_training.ipynb` compares forecast models and writes `results/supervised/`.
+2. `02_shared_analysis_prep.ipynb` prepares the analysis files and writes `data/shared/shared_manifest.json`.
+3. `03_eda.ipynb` checks the joined station-hour panel and writes `figures/eda/`.
+4. `04_unsupervised_model_training.ipynb` clusters trips and stations.
+5. `05_supervised_model_training.ipynb` compares forecast models and writes `results/supervised/`.
 
-Notebooks 04 and 05 also read `data/shared/shared_manifest.json`. That file is produced by `02_shared_analysis_prep.ipynb`, which is not in this folder. They stop at that check until the manifest exists for the processed files from notebook 01.
+Notebooks 04 and 05 also read `data/shared/shared_manifest.json`.
 
 Training is January 2024 through December 2025. Validation is January–March 2026. The held-out test is April–June 2026. Dates live in `project_settings.json`.
 
